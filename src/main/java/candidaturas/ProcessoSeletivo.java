@@ -12,7 +12,20 @@ public class ProcessoSeletivo {
         analisarCandidato(2200.0);
         analisarCandidato(2000.0);
         */
-        selecaoCandidatos();
+        //selecaoCandidatos();
+        imprimirSelecionados();
+    }
+    static void imprimirSelecionados(){
+        String[] candidatos = {"FELIPE","MARCIA","JULIA","PAULO","AUGUSTO"};
+        System.out.println("Imprimindo com informação de indice usando for");
+        for (int i = 0; i < candidatos.length; i++) {
+            System.out.println("O candidato de n." + (i+1) + " é o(a) " + candidatos[i]);
+        }
+        System.out.println("Imprimindo de forma abreviada com foreach");
+        for (String candidato : candidatos) {
+            System.out.println("O candidato selecionado foi: " + candidato);
+        }
+
     }
     static void selecaoCandidatos() {
         String[] candidatos = {"FELIPE","MARCIA","JULIA","PAULO","AUGUSTO","MONICA","FABRICIO","MIRELA","DANIELA","JORGE"};
